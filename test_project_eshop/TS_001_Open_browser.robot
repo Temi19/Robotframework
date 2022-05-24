@@ -7,7 +7,7 @@ ${url}  http://uiautomation.domain.local/
 
 *** Test Cases ***
 TC_001 - Otevři browser chrome a jdi na adresu
-    Set Selenium Speed   0.2s
+    Set Selenium Speed   0.5s
     
     Open Browser  ${URL}  ${browserChrome}
     Maximize Browser Window
