@@ -8,8 +8,8 @@ Pre-conditions
     Maximize Browser Window
     Set Selenium Speed   0.5s
 
-Test The Top Part Of The Web Site
-    
+Test The Main Page Of Store
+    clickOnStoreButton
 
 Post-conditions
     Delete All Cookies
@@ -18,5 +18,6 @@ Post-conditions
 *** Keywords ***
 clickOnStoreButton
     Click Link    (//A[@href='http://uiautomation.domain.local/store/'][text()='Store'])[1]
-    Sleep    5s
+    Sleep    1s
+
     
