@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220526 10:14:45.528" rpa="false" schemaversion="3">
+<suite id="s1" name="TC CNSH REG 001" source="C:\Users\amanzhanov\Projects\Robotframework\test_project_eshop\TS_CNSH_002\TC_CNSH_REG_001.robot">
+<test id="s1-t1" name="Pre-conditions" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220526 10:14:45.707" level="INFO">Opening browser 'chrome' to base url 'http://uiautomation.domain.local/'.</msg>
+<status status="PASS" starttime="20220526 10:14:45.707" endtime="20220526 10:14:48.033"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220526 10:14:48.034" endtime="20220526 10:14:48.256"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220526 10:14:48.258" endtime="20220526 10:14:48.260"/>
+</kw>
+<status status="PASS" starttime="20220526 10:14:45.700" endtime="20220526 10:14:48.261"/>
+</test>
+<test id="s1-t2" name="Validation Test" line="11">
+<kw name="loginToApplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>(//A[@href='http://uiautomation.domain.local/my-account/'][text()='Account'])[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220526 10:14:48.264" level="INFO">Clicking link '(//A[@href='http://uiautomation.domain.local/my-account/'][text()='Account'])[1]'.</msg>
+<status status="PASS" starttime="20220526 10:14:48.264" endtime="20220526 10:14:50.466"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${usernameElement}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220526 10:14:50.466" level="INFO">Typing text 'TimOK' into text field '//INPUT[@id='reg_username']'.</msg>
+<status status="PASS" starttime="20220526 10:14:50.466" endtime="20220526 10:14:52.039"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${emailElement}</arg>
+<arg>${inputEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220526 10:14:52.039" level="INFO">Typing text 'test299919@seznam.cz' into text field '//INPUT[@id='reg_email']'.</msg>
+<status status="PASS" starttime="20220526 10:14:52.039" endtime="20220526 10:14:53.674"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${passwordElement}</arg>
+<arg>${inputPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220526 10:14:53.674" level="INFO">Typing text 'test123/85TS' into text field '//INPUT[@id='reg_password']'.</msg>
+<status status="PASS" starttime="20220526 10:14:53.674" endtime="20220526 10:14:55.322"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[contains(text(),'Register')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220526 10:14:55.322" level="INFO">Clicking button '//button[contains(text(),'Register')]'.</msg>
+<status status="PASS" starttime="20220526 10:14:55.322" endtime="20220526 10:14:59.207"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220526 10:15:00.218" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220526 10:14:59.207" endtime="20220526 10:15:00.218"/>
+</kw>
+<status status="PASS" starttime="20220526 10:14:48.264" endtime="20220526 10:15:00.218"/>
+</kw>
+<status status="PASS" starttime="20220526 10:14:48.263" endtime="20220526 10:15:00.219"/>
+</test>
+<test id="s1-t3" name="Post-conditions" line="14">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>loginScreenshot.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:15:01.215" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="loginScreenshot.png"&gt;&lt;img src="loginScreenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220526 10:15:00.222" endtime="20220526 10:15:01.215"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220526 10:15:01.216" endtime="20220526 10:15:01.741"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220526 10:15:01.742" endtime="20220526 10:15:04.321"/>
+</kw>
+<status status="PASS" starttime="20220526 10:15:00.221" endtime="20220526 10:15:04.321"/>
+</test>
+<status status="PASS" starttime="20220526 10:14:45.528" endtime="20220526 10:15:04.324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="TC CNSH REG 001">TC CNSH REG 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

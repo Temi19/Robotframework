@@ -9,15 +9,14 @@ Pre-conditions
     Set Selenium Speed   0.5s
 
 Test The Main Page Of Store
-    clickOnMainpageIcon
+    hoverMouseOnTheBucketIcon
 
 Post-conditions
     Delete All Cookies
     Close Browser
 
 *** Keywords ***
-clickOnMainpageIcon
-    Page Should Contain Image    ${CNlogo}
+hoverMouseOnTheBucketIcon
+    Page Should Contain Element    ${bucketLogo}
     Sleep    1s
-    Click Image    ${CNlogo}
     
